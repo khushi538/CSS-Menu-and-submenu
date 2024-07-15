@@ -1,0 +1,50 @@
+nav{
+    background: #12c2e9;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+text-align: center;
+padding: 5px 0;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    
+    padding: 15px 25px;
+    display: block;
+    color: white
+}
+
+nav ul li:hover a{
+    background-color: rgb(255, 255, 255, 0.2);
+}
+
+
+
+nav ul li .submenu{
+    position: absolute;
+    border: 1px solid #aaa;
+    background-color: white;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    margin: 50px;
+}
+
+nav ul li .submenu li{
+    display: block;
+    border-bottom: 1px solid #aaa;
+}
+
+
+nav ul li .submenu li a{
+    color: black;
+}
+
+nav ul li:hover .submenu{
+    opacity: 1;
+    visibility: visible;
+    margin: 0;
+}
